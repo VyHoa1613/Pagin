@@ -1,0 +1,91 @@
+{
+  "books": [
+    {
+      "title": "attract",
+      "description": "thu hut, chu y",
+      "id": "g32Ml9vr5",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603613684/images/vs7h2vtwdxqqc182fjff.jpg"
+    },
+    {
+      "title": "consider",
+      "description": "nghi ve ai do, cai gi",
+      "id": "5g2unl8QX",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603613713/images/c3lpe3dgat5thl1najh7.jpg"
+    },
+    {
+      "title": "abide by",
+      "description": "tuan theo, tuan thu",
+      "id": "0yt6ncmug",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603613722/images/leoqlncmx6uxy587pfi3.jpg"
+    },
+    {
+      "title": "determine",
+      "description": "xac dinh, xac minh",
+      "id": "p3_ATaCeN",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603714491/images/likg6udmlklg81rtqcs5.jpg"
+    },
+    {
+      "title": "solve",
+      "description": "giai phap, ",
+      "id": "vaQJzjRpv"
+    },
+    {
+      "title": "obligate",
+      "description": "bat ep, bat buoc",
+      "id": "j_p_qQTIb"
+    }
+  ],
+  "users": [
+    {
+      "name": "concerns",
+      "email": "123456@gmail.com",
+      "password": "$2b$10$3R7CSl.N9aOqZE0pLm6ENevwA/KYwMFuZHAckQIJ/b5vo6MWcTJxm",
+      "id": "vyPRev3GE",
+      "avatar": "https://res.cloudinary.com/hoavy11/image/upload/v1603599441/express/ozxnbyxkqfmgdwzxcgjt.jpg"
+    },
+    {
+      "name": "signature",
+      "email": "3@gmail.com",
+      "password": "$2b$10$GgYN3EBVUQTN73p6zsMuBuhKWBy.5X8slx81wQkDdbJHYIsNbJPUi",
+      "id": "TtwhbLTbg",
+      "avatar": "https://res.cloudinary.com/hoavy11/image/upload/v1603450664/express/v7s0pxz4f1cjztswrssn.jpg"
+    },
+    {
+      "name": "engage",
+      "email": "1@gmail.com",
+      "password": "$2b$10$c2On2kS56Dv9b6j7eqZUMORjnGSkjlr6v1If.wMdXvgt9/md5ii3q",
+      "id": "e9N8TVimA",
+      "avatar": "https://res.cloudinary.com/hoavy11/image/upload/v1603598864/express/p1phlrjmtao2oaf50ppz.jpg"
+    }
+  ],
+  "transactions": [
+    {
+      "idName": "TtwhbLTbg",
+      "idBook": "vaQJzjRpv",
+      "id": "Kl_AKfiev"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "BF70ZRLrS",
+      "cart": {
+        "0yt6ncmug": 1,
+        "g32Ml9vr5": 1,
+        "5g2unl8QX": 2
+      }
+    },
+    {
+      "id": "mP4xWnC4k",
+      "cart": {
+        "5g2unl8QX": 1,
+        "g32Ml9vr5": 1
+      }
+    },
+    {
+      "id": "TDPePiD1C"
+    },
+    {
+      "id": "7fHo9aPHl"
+    }
+  ]
+}

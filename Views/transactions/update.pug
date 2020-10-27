@@ -1,0 +1,23 @@
+extends ../layout/layout 
+
+block content
+     h1 Dm CoderX
+    style.
+        th,td{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+
+        }
+        table{
+        border-collapse: collapse;
+        width: 100%;
+        }           
+    table
+            tr
+                th Ten Nguoi Muon
+                th Sach Muon
+            each item in info
+                tr
+                    td= item.user
+                    td= item.book
