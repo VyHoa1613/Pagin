@@ -68,6 +68,7 @@ module.exports.rent = (req, res) => {
                     temp.idBook = i
                     temp.idName = addUser.idUser
                     temp.sl = addUser.cart[i]
+                    temp.pay = false
                     db.get('transactions').push(temp).write()
                 }
                 return;

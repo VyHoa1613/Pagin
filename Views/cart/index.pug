@@ -3,6 +3,9 @@ extends ../layout/layout
 block content
     h1 Cart
     style.
+        .aa{
+            float: right;
+        }
         th,td{
         padding: 8px;
         text-align: left;
@@ -13,9 +16,8 @@ block content
         border-collapse: collapse;
         width: 100%;
         }           
-    form 
-        input(type="text", name="q",value =quest)
-        button Search
+    form(action="/cart",method="POST")
+        button.aa(class="btn btn-primary mb-2") Rent
     table
             tr
                 th Image
@@ -28,6 +30,3 @@ block content
                         img(src= cart.image,width="48" height="48")
                     td= cart.name
                     td= cart.sl
-                    td
-                        form(action="/cart",method="POST")
-                            button(class="btn btn-primary mb-2") Rent

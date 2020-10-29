@@ -11,7 +11,8 @@ module.exports.index = (req, res) => {
             user:db.get('users').find({id:item.idName}).value().name,
             book:db.get('books').find({id:item.idBook}).value().title,
             id:item.id,
-            sl:item.sl
+            sl:item.sl,
+            pay:item.pay
         }
     })
     res.render('transactions/index', {
@@ -19,37 +20,43 @@ module.exports.index = (req, res) => {
     })
 }
 
-module.exports.postTranUpdate = (req, res) =>{
-    let id = req.body.id
-    db.get('transactions').find({id:id}).assign({idName: req.body.idName, idBook: req.body.idBook,sl:req.body.sl}).write()
-    res.redirect('/transactions')
+module.exports.payBook = (req, res) => {
+    let id = req.params.id
+    db.get('transactions').find({id:id}).assign({pay:true}).write()
+    res.redirect("/transactions")
 }
 
-module.exports.getTranUpdate = (req, res) =>{
-    let id = req.params.id
-    value = db.get('transactions').find({id:id}).value()
-    let info = {}
-    for (let i in value)
-    {
-        info = {
-            id:i.id,
-            idName:i.idName,
-            sl:i.sl,
-            idBook:i.idBook,
-            user:users.find(function(item){
-                item.id == i.idName
-                return item.name
-            }),
-            book:books.find(function(item){
-                item.id == i.idName
-                return item.title
-            })
-        }
-    }
-    res.render('/transactions/:id/update',{
-        info:info
-    })
-}
+// module.exports.postTranUpdate = (req, res) =>{
+//     let id = req.body.id
+//     db.get('transactions').find({id:id}).assign({idName: req.body.idName, idBook: req.body.idBook,sl:req.body.sl}).write()
+//     res.redirect('/transactions')
+// }
+
+// module.exports.getTranUpdate = (req, res) =>{
+//     let id = req.params.id
+//     value = db.get('transactions').find({id:id}).value()
+//     let info = {}
+//     for (let i in value)
+//     {
+//         info = {
+//             id:i.id,
+//             idName:i.idName,
+//             sl:i.sl,
+//             idBook:i.idBook,
+//             user:users.find(function(item){
+//                 item.id == i.idName
+//                 return item.name
+//             }),
+//             book:books.find(function(item){
+//                 item.id == i.idName
+//                 return item.title
+//             })
+//         }
+//     }
+//     res.render('/transactions/:id/update',{
+//         info:info
+//     })
+// }
 
 module.exports.getTranCreate = (req, res) => {
     let users = db.get('users').value()
@@ -70,6 +77,6 @@ module.exports.postTranCreate = (req, res) =>{
 
 module.exports.deleteTran = (req, res) =>{
     let id = req.params.id
-    db.get('transaction').remove({id:id}).write()
+    db.get('transactions').remove({id:id}).write()
     res.redirect('/transactions')
 }

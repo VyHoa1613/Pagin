@@ -1,7 +1,7 @@
 extends ../layout/layout 
 
 block content
-    h1 Dm CoderX
+    h1 List Muon sach
     a(href='/transactions/create') Muon sach
     style.
         th,td{
@@ -19,14 +19,16 @@ block content
                 th Ten nguoi muon
                 th Ten sach Muon
                 th So luong
-                th update
+                th Da Tra
+                th Tra Sach
                 th Delete
             each item in info
                 tr
                     td= item.user
                     td= item.book
                     td= item.sl
+                    td= item.pay
                     td
-                        a(href="/transactions/"+item.id+'/update') Update
+                        a.btn.btn-primary(href='/transactions/pay/' + item.id) Pay
                     td
                         a(href="/transactions/"+item.id+'/delete') Delete

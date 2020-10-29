@@ -10,7 +10,7 @@ module.exports = function(req, res, next) {
         let sessionId = shortid.generate()
         res.cookie('sessionId', sessionId, {signed: true})
         db.get('sessions').push({id:sessionId}).write()
-        res.redirect('/')
+        res.redirect('back')
         return;
     }
     res.locals.sessionId = req.signedCookies.sessionId

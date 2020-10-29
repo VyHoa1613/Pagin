@@ -60,29 +60,13 @@
       "avatar": "https://res.cloudinary.com/hoavy11/image/upload/v1603598864/express/p1phlrjmtao2oaf50ppz.jpg"
     }
   ],
-  "transactions": [
-    {
-      "id": "KjcAyzjZY",
-      "idBook": "g32Ml9vr5",
-      "idName": "TtwhbLTbg",
-      "sl": 1
-    },
-    {
-      "id": "56H0dw8EvG",
-      "idBook": "5g2unl8QX",
-      "idName": "TtwhbLTbg",
-      "sl": 1
-    },
-    {
-      "id": "vPaAQkDhIL",
-      "idBook": "0yt6ncmug",
-      "idName": "TtwhbLTbg",
-      "sl": 1
-    }
-  ],
+  "transactions": [],
   "sessions": [
     {
       "id": "WFItHwLIeD"
+    },
+    {
+      "id": "mqk6OUnHiu"
     }
   ]
 }
