@@ -1,7 +1,7 @@
 extends ../layout/layout 
 
 block content
-     h1 Dm CoderX
+     h1 UPdate transaction
     style.
         th,td{
         padding: 8px;
@@ -17,7 +17,9 @@ block content
             tr
                 th Ten Nguoi Muon
                 th Sach Muon
+                th So luong
             each item in info
                 tr
                     td= item.user
                     td= item.book
+                    td= item.sl

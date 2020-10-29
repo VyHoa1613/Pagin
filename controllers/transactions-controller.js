@@ -10,7 +10,8 @@ module.exports.index = (req, res) => {
         return{
             user:db.get('users').find({id:item.idName}).value().name,
             book:db.get('books').find({id:item.idBook}).value().title,
-            id:item.id
+            id:item.id,
+            sl:item.sl
         }
     })
     res.render('transactions/index', {
@@ -20,7 +21,7 @@ module.exports.index = (req, res) => {
 
 module.exports.postTranUpdate = (req, res) =>{
     let id = req.body.id
-    db.get('transactions').find({id:id}).assign({idName: req.body.idName, idBook: req.body.idBook}).write()
+    db.get('transactions').find({id:id}).assign({idName: req.body.idName, idBook: req.body.idBook,sl:req.body.sl}).write()
     res.redirect('/transactions')
 }
 
@@ -33,6 +34,7 @@ module.exports.getTranUpdate = (req, res) =>{
         info = {
             id:i.id,
             idName:i.idName,
+            sl:i.sl,
             idBook:i.idBook,
             user:users.find(function(item){
                 item.id == i.idName

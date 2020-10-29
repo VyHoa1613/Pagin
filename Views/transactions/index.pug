@@ -18,12 +18,14 @@ block content
             tr
                 th Ten nguoi muon
                 th Ten sach Muon
+                th So luong
                 th update
                 th Delete
             each item in info
                 tr
                     td= item.user
                     td= item.book
+                    td= item.sl
                     td
                         a(href="/transactions/"+item.id+'/update') Update
                     td

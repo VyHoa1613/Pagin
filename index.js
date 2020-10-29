@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 var cookieParser = require('cookie-parser')
 
-const port = 3003
+const port = 3000
 
 const bookRoutes = require('./routes/home-routes')
 const userRoutes = require('./routes/users-routes')

@@ -27,12 +27,14 @@
     {
       "title": "solve",
       "description": "giai phap, ",
-      "id": "vaQJzjRpv"
+      "id": "vaQJzjRpv",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603880892/images/g5snkls2clu4gev1ji1w.jpg"
     },
     {
       "title": "obligate",
       "description": "bat ep, bat buoc",
-      "id": "j_p_qQTIb"
+      "id": "j_p_qQTIb",
+      "image": "https://res.cloudinary.com/hoavy11/image/upload/v1603881158/images/khf2uadl1qlpmfv6frbl.jpg"
     }
   ],
   "users": [
@@ -60,32 +62,27 @@
   ],
   "transactions": [
     {
+      "id": "KjcAyzjZY",
+      "idBook": "g32Ml9vr5",
       "idName": "TtwhbLTbg",
-      "idBook": "vaQJzjRpv",
-      "id": "Kl_AKfiev"
+      "sl": 1
+    },
+    {
+      "id": "56H0dw8EvG",
+      "idBook": "5g2unl8QX",
+      "idName": "TtwhbLTbg",
+      "sl": 1
+    },
+    {
+      "id": "vPaAQkDhIL",
+      "idBook": "0yt6ncmug",
+      "idName": "TtwhbLTbg",
+      "sl": 1
     }
   ],
   "sessions": [
     {
-      "id": "BF70ZRLrS",
-      "cart": {
-        "0yt6ncmug": 1,
-        "g32Ml9vr5": 1,
-        "5g2unl8QX": 2
-      }
-    },
-    {
-      "id": "mP4xWnC4k",
-      "cart": {
-        "5g2unl8QX": 1,
-        "g32Ml9vr5": 1
-      }
-    },
-    {
-      "id": "TDPePiD1C"
-    },
-    {
-      "id": "7fHo9aPHl"
+      "id": "WFItHwLIeD"
     }
   ]
 }
